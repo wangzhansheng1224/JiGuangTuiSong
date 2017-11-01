@@ -15,6 +15,11 @@
 #endif
 // 如果需要使用idfa功能所需要引入的头文件（可选）
 #import <AdSupport/AdSupport.h>
+#import "ViewController.h"
+#define ShowAlertWithMsg(msg) UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:msg preferredStyle:UIAlertControllerStyleAlert];\
+UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确 定" style:UIAlertActionStyleDefault handler:nil];\
+[alert addAction:sureAction];\
+[[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 @interface AppDelegate ()<JPUSHRegisterDelegate>
 
 @end
@@ -23,11 +28,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    
+    [self.window makeKeyAndVisible];
+
+    
+    //完全退出的情况点击消息通知
+    NSDictionary *remoteNotification = [launchOptions objectForKey: UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (remoteNotification)
+    {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"111" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确 定" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:sureAction];
+        [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+        
+        // 程序完全退出时，点击通知，添加需求。。。
+        
+    }
+    
     
     //添加初始化APNs代码
     //Required
     //notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
-    
     
 //    JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
 //    entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound;
@@ -38,6 +63,7 @@
 //    }
 //    [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
    
+    
     //根据上面修改的
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
         JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
@@ -81,14 +107,7 @@
     
     
     //程序退出时推送回调
-    NSDictionary *remoteNotification = [launchOptions objectForKey: UIApplicationLaunchOptionsRemoteNotificationKey];
     
-    if (remoteNotification)
-    {
-        
-        // 程序完全退出时，点击通知，添加需求。。。
-        
-    }
     
     
     

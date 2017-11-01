@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "oa/AppDelegate.m"
-            timestampString = "531217853.241414"
+            timestampString = "531219148.598578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "-jpushNotificationCenter:willPresentNotification:withCompletionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "oa/AppDelegate.m"
-            timestampString = "531217853.241767"
+            timestampString = "531219148.599318"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "-jpushNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "oa/AppDelegate.m"
-            timestampString = "531217853.241838"
+            timestampString = "531219148.599728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-application:didReceiveRemoteNotification:fetchCompletionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "oa/AppDelegate.m"
-            timestampString = "531217853.2419"
+            timestampString = "531219148.600147"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "-application:didReceiveRemoteNotification:"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "oa/AppDelegate.m"
-            timestampString = "531217853.24196"
+            timestampString = "531219148.600555"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "-ExtrasOfNotificationWithUserInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,13 +90,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "oa/AppDelegate.m"
-            timestampString = "531217853.242112"
+            timestampString = "531219148.600906"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate application:didFinishLaunchingWithOptions:]"
+                  moduleName = "oa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzhansheng/%E6%9E%81%E5%85%89%E6%8E%A8%E9%80%81/oa/oa/AppDelegate.m"
+                  timestampString = "531218857.427152"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1312">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__57-[AppDelegate application:didFinishLaunchingWithOptions:]_block_invoke"
+                  moduleName = "oa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzhansheng/%E6%9E%81%E5%85%89%E6%8E%A8%E9%80%81/oa/oa/AppDelegate.m"
+                  timestampString = "531218857.430086"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
